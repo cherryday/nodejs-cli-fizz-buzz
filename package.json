@@ -2,17 +2,18 @@
   "name": "nodejs-cli-fizz-buzz",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "./src/main.js",
   "scripts": {
     "start": "node ./src/main.js",
     "dev": "nodemon ./src/main.js",
     "test": "jest"
   },
+  "bin": "./src/main.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^28.1.2",
     "jest": "^28.1.1",
     "nodemon": "^2.0.16"
   }
