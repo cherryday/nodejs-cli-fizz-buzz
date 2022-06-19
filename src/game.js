@@ -1,7 +1,7 @@
-export const MIN_NUMBER = 0
-export const MAX_NUMBER = 100
+const MIN_NUMBER = 1
+const MAX_NUMBER = 100
 
-export function validateNumber(number) {
+function validateNumber(number) {
   if (!Number.isInteger(number) || number < MIN_NUMBER || number > MAX_NUMBER) {
     return false
   }
@@ -9,7 +9,7 @@ export function validateNumber(number) {
   return true
 }
 
-export function makeMove(number) {
+function makeMove(number) {
   if (number % 3 === 0 && number % 5 === 0) {
     return 'FizzBuzz!'
   } else if (number % 3 === 0) {
@@ -17,4 +17,7 @@ export function makeMove(number) {
   } else if (number % 5 === 0) {
     return 'Buzz!'
   }
+  return ''
 }
+
+export default { MIN_NUMBER, MAX_NUMBER, validateNumber, makeMove }
