@@ -1,4 +1,4 @@
-import game from '../src/game'
+const game = require('../src/game')
 
 describe('game', () => {
   it.each([

@@ -20,4 +20,4 @@ function makeMove(number) {
   return ''
 }
 
-export default { MIN_NUMBER, MAX_NUMBER, validateNumber, makeMove }
+module.exports = { MIN_NUMBER, MAX_NUMBER, validateNumber, makeMove }
